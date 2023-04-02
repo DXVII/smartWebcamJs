@@ -22,8 +22,8 @@ app.get("/", function (req, res) {
 // Creating object of key and certificate
 // for SSL
 const options = {
-  key: fs.readFileSync("server.key"),
-  cert: fs.readFileSync("server.cert"),
+  key: fs.readFileSync("/auth/server.key"),
+  cert: fs.readFileSync("/auth/server.cert"),
 };
 
 
